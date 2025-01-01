@@ -1,0 +1,58 @@
+/* About.css */
+
+.about-container {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    flex-direction: column; /* Mengatur tata letak menjadi baris */
+    align-items: center; /* Memusatkan elemen secara vertikal */
+    justify-content: space-between; /* Memberikan jarak antara elemen */
+    padding: 20px; /* Memberikan padding di sekitar konten */
+    /* background-color:rgb(177, 255, 146); Warna latar belakang */
+    max-width: 1200px; /* Membatasi lebar maksimum konten */
+    margin: 0 auto; /* Memusatkan konten */
+    margin-top: -20px;
+}
+
+.about-text {
+    text-weight: bold;
+    text-align: center;
+    flex: 1; /* Membuat teks mengambil ruang yang tersedia */
+    margin-right: 20px; /* Memberikan jarak antara teks dan gambar */
+}
+
+.about-text h3 {
+    font-size: 40px; /* Ukuran font untuk judul */
+    color: #FFF; /* Warna teks judul */
+    margin-bottom: 10px; /* Jarak bawah untuk judul */
+}
+
+.about-text p {
+    font-size: 18px; /* Ukuran font untuk paragraf */
+    color:rgb(144, 144, 144); /* Warna teks paragraf */
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+.image {
+    width: 100%; /* Membuat gambar mengambil lebar penuh */
+    max-width: 600px; /* Membatasi lebar maksimum gambar */
+    height: auto; /* Memastikan gambar tetap proporsional */
+    border-radius: 10px; /* Memberikan sudut melengkung pada gambar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Memberikan efek bayangan */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Mengubah tata letak menjadi kolom pada layar kecil */
+        align-items: center; /* Memusatkan elemen secara horizontal */
+    }
+
+    .about-text {
+        margin-right: 0; /* Menghapus margin pada layar kecil */
+        margin-bottom: 20px; /* Memberikan jarak bawah pada teks */
+        text-align: center; /* Memusatkan teks */
+    }
+
+    .image {
+        max-width: 100%; /* Membuat gambar mengambil lebar penuh pada layar kecil */
+    }
+}

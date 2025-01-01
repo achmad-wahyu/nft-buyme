@@ -1,0 +1,46 @@
+/* Header.css */
+
+.header {
+    display: flex; /* Using flexbox for layout */
+    justify-content: space-between; /* Spread elements to left and right */
+    align-items: center; /* Center elements vertically */
+    padding: 20px; /* Padding around the header */
+    background-color: #282c34; /* Header background color */
+    color: white; /* Text color */
+}
+
+.title {
+    font-size: 24px; /* Font size for title */
+    margin: 0; /* Remove default margin */
+}
+
+.connect-wallet {
+    font-weight: bold;
+    font-size: 20px;
+    background-color:rgb(53, 187, 232); /* Button background color */
+    color: #FFF;
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners for button */
+    padding: 10px 20px; /* Padding inside button */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.connect-wallet:hover {
+    background-color:rgb(5, 217, 240); /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
+
+    .connect-wallet {
+        font-weight: bold;
+        margin-top: 10px; /* Add margin above the button */
+        width: 100%;
+    }
+}

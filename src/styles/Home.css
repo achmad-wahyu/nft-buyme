@@ -1,0 +1,105 @@
+/* Home.css */
+
+.home-container {
+    display: flex;
+    align-items: center; /* Memusatkan elemen secara vertikal */
+    justify-content: space-between; /* Memberikan jarak antara elemen */
+    padding:  0 50px;
+    /* background-color: #f0f0f0; */
+    min-height: 70vh;
+}
+
+.text {
+    font-size: 24px;
+    font-weight: bold;
+    width: 800px;
+    /* margin-right: 10px; Memberikan jarak antara teks dan gambar */
+    /* flex: 1; Membuat teks mengambil ruang yang tersedia */
+    /* border: 1px solid; */
+}
+
+.text button {
+    font-weight: bold;
+    color: #FFF; /* Warna teks awal */
+    width: 150px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid #3FFF; /* Warna border */
+    background-color: rgb(23, 23, 23);
+    cursor: pointer; /* Mengubah kursor saat hover */
+    transition: background-color 0.3s, color 0.3s, border 0.3s; /* Transisi halus */
+}
+
+.text button:hover {
+    font-weight: bold;
+    background-color: #3FFF; /* Mengubah warna latar belakang saat hover */
+}
+
+.image {
+    width: 500px; /* Atur lebar gambar sesuai kebutuhan */
+    height: auto; /* Memastikan gambar tetap proporsional */
+    border-radius: 10px; /* Memberikan sudut melengkung pada gambar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Memberikan efek bayangan */
+}
+
+/* Responsif */
+/* Untuk layar dengan lebar maksimum 1024px */
+@media (max-width: 1024px) {
+    .home-container {
+        flex-direction: column; /* Mengubah tata letak menjadi kolom pada layar kecil */
+        align-items: center; /* Memusatkan elemen secara horizontal */
+    }
+
+    .text {
+        margin-right: 0; /* Menghapus margin pada layar kecil */
+        margin-bottom: 20px; /* Memberikan jarak bawah pada teks */
+        text-align: center; /* Memusatkan teks */
+        width: 80%; /* Mengatur lebar teks menjadi 80% dari wadah */
+    }
+
+    .image {
+        width: 100%; /* Membuat gambar mengambil lebar penuh pada layar kecil */
+        max-width: 600px; /* Membatasi lebar maksimum gambar */
+    }
+}
+
+/* Untuk layar dengan lebar maksimum 600px */
+@media (max-width: 600px) {
+    .home-container {
+        flex-direction: column; /* Mengubah tata letak menjadi kolom pada layar kecil */
+        align-items: center; /* Memusatkan elemen secara horizontal */
+    }
+
+    .text {
+        margin-right: 0; /* Menghapus margin pada layar kecil */
+        margin-bottom: 15px; /* Memberikan jarak bawah pada teks */
+        text-align: center; /* Memusatkan teks */
+        width: 90%; /* Mengatur lebar teks menjadi 90% dari wadah */
+    }
+
+    .image {
+        width: 100%; /* Membuat gambar mengambil lebar penuh pada layar kecil */
+        max-width: 100%; /* Membatasi lebar maksimum gambar */
+    }
+}
+
+/* Untuk layar dengan lebar maksimum 480px */
+@media (max-width: 480px) {
+    .home-container {
+        flex-direction: column; /* Mengubah tata letak menjadi kolom pada layar kecil */
+        align-items: center; /* Memusatkan elemen secara horizontal */
+    }
+
+    .text {
+        margin-right: 0; /* Menghapus margin pada layar kecil */
+        margin-bottom: 10px; /* Memberikan jarak bawah pada teks */
+        text-align: center; /* Memusatkan teks */
+        width: 95%; /* Mengatur lebar teks menjadi 95% dari wadah */
+    }
+
+    .image {
+        width: 100%; /* Membuat gambar mengambil lebar penuh pada layar kecil */
+        max-width: 100%; /* Membatasi lebar maksimum gambar */
+    }
+}
